@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSK Membership</title>
+
+    <meta name="description"
+        content="Become a Chennai Super Kings member. Choose your plan and unlock exclusive benefits.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./membership.css">
+
+    <!-- Logo Icorn -->
+    <link rel="shortcut icon" href="./image/csk-logo.png" type="image/x-icon">
+
+    <!-- Fontawsom Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- =========================
+       NAVBAR
+  ========================== -->
+    <header class="navbar">
+
+        <div class="nav-inner">
+
+            <a href="./index.html" class="brand">
+                <img src="./image/csk-logo.png" alt="Chennai Super Kings Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+
+                <a href="./index.html">Home</a>
+
+                <a href="#">Matches</a>
+
+                <a href="#">Tickets</a>
+
+                <a href="#" class="active">Membership</a>
+
+                <a href="./offer.html">Offers</a>
+
+                <a href="#">Contact</a>
+
+            </nav>
+
+            <!-- Navigation Actions -->
+            <div class="nav-actions">
+
+                <button class="icon-btn search-btn" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 0, 0);"></i>
+                </button>
+
+                <button class="icon-btn cart-btn" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-cart-shopping" style="color: rgb(0, 0, 0);"></i>
+                    <b id="cartCount">0</b>
+                </button>
+
+                <button class="login-btn" id="loginBtn">
+                    Login / Sign Up
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- =========================
+       SEARCH PANEL
+  ========================== -->
+    <div class="search-panel" id="searchPanel">
+
+        <div class="search-box">
+
+            <input id="searchInput" type="search" placeholder="Search matches, tickets, offers...">
+
+            <button id="searchClose" aria-label="Close Search">
+                ×
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Side Navbar -->
+    <div class="side_navbar">
+
+        <div class="side_cancle_btn" id="side_cancle">
+            <i class="fa-solid fa-x" style="color: rgb(0, 0, 0);"></i>
+        </div>
+
+        <a href="./index.html" class="side_navbar_brand">
+            <img src="./image/csk-logo.png" alt="Chennai Super Kings Logo">
+        </a>
+
+
+
+        <div class="side_navbar_para">
+            <a href="./index.html">Home</a>
+
+            <a href="#">Matches</a>
+
+            <a href="#">Tickets</a>
+
+            <a href="#">Membership</a>
+
+            <a href="#">Offers</a>
+
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="side_btn_con">
+            <button class="side_log" id="loginBtn">
+                Login / Sign Up
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- =========================
+       MAIN
+  ========================== -->
+    <main id="membership">
+
+
+        <!-- =========================
+         MEMBERSHIP HERO
+    ========================== -->
+        <section class="membership-hero">
+
+            <div class="membership-hero-inner">
+
+                <div class="membership-hero-copy">
+
+                    <h1>CSK MEMBERSHIP</h1>
+
+                    <p>BE MORE THAN A FAN. BE A SUPER KING!</p>
+
+                    <div class="membership-badges">
+
+                        <div>
+                            <i class="fa-solid fa-gem"></i>
+                            Exclusive Benefits
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-bolt"></i>
+                            Priority Access
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-tags"></i>
+                            Special Discounts
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            Unique Experiences
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         PRICING CARDS
+    ========================== -->
+        <section class="pricing-section" id="plans">
+
+            <div class="pricing-grid">
+
+                <!-- SUPER KING -->
+                <div class="plan-card">
+
+                    <div class="plan-head yellow">SUPER KING</div>
+
+                    <div class="plan-body">
+
+                        <div class="plan-icon gold">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+
+                        <div class="plan-price">
+                            ₹999
+                            <span>/ Season</span>
+                        </div>
+
+                        <ul class="plan-features">
+
+                            <li><i class="fa-solid fa-check"></i> Priority Ticket Booking</li>
+                            <li><i class="fa-solid fa-check"></i> Exclusive Member Offers</li>
+                            <li><i class="fa-solid fa-check"></i> 10% Discount on CSK Shop</li>
+                            <li><i class="fa-solid fa-check"></i> Digital Membership Card</li>
+                            <li><i class="fa-solid fa-check"></i> Members-Only Newsletters</li>
+
+                        </ul>
+
+                        <button class="join-btn yellow" data-plan="Super King">
+                            Join Now <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- SUPER KING PLUS -->
+                <div class="plan-card">
+
+                    <div class="plan-head blue">SUPER KING PLUS</div>
+
+                    <div class="plan-body">
+
+                        <div class="plan-icon navy">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="plan-price">
+                            ₹1,999
+                            <span>/ Season</span>
+                        </div>
+
+                        <ul class="plan-features blue-check">
+
+                            <li><i class="fa-solid fa-check"></i> All Super King Benefits</li>
+                            <li><i class="fa-solid fa-check"></i> Early Ticket Access</li>
+                            <li><i class="fa-solid fa-check"></i> 15% Discount on CSK Shop</li>
+                            <li><i class="fa-solid fa-check"></i> Invite to Exclusive Events</li>
+                            <li><i class="fa-solid fa-check"></i> Signed Digital Collectibles</li>
+
+                        </ul>
+
+                        <button class="join-btn blue" data-plan="Super King Plus">
+                            Join Now <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- CHAMPION -->
+                <div class="plan-card">
+
+                    <div class="plan-head yellow">CHAMPION</div>
+
+                    <div class="plan-body">
+
+                        <div class="plan-icon gold">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+
+                        <div class="plan-price">
+                            ₹4,999
+                            <span>/ Season</span>
+                        </div>
+
+                        <ul class="plan-features">
+
+                            <li><i class="fa-solid fa-check"></i> All Super King Plus Benefits</li>
+                            <li><i class="fa-solid fa-check"></i> VIP Entry at the Stadium</li>
+                            <li><i class="fa-solid fa-check"></i> 20% Discount on CSK Shop</li>
+                            <li><i class="fa-solid fa-check"></i> Meet & Greet Opportunities</li>
+                            <li><i class="fa-solid fa-check"></i> Exclusive Champion Kit</li>
+
+                        </ul>
+
+                        <button class="join-btn yellow" data-plan="Champion">
+                            Join Now <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- LEGEND -->
+                <div class="plan-card">
+
+                    <div class="plan-head blue">LEGEND</div>
+
+                    <div class="plan-body">
+
+                        <div class="plan-icon navy">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+
+                        <div class="plan-price">
+                            ₹9,999
+                            <span>/ Season</span>
+                        </div>
+
+                        <ul class="plan-features blue-check">
+
+                            <li><i class="fa-solid fa-check"></i> All Champion Benefits</li>
+                            <li><i class="fa-solid fa-check"></i> Personalized Membership Kit</li>
+                            <li><i class="fa-solid fa-check"></i> Exclusive Lounge Access</li>
+                            <li><i class="fa-solid fa-check"></i> Behind-the-Scenes Access</li>
+                            <li><i class="fa-solid fa-check"></i> Special Recognition</li>
+
+                        </ul>
+
+                        <button class="join-btn blue" data-plan="Legend">
+                            Join Now <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         COMPARE MEMBERSHIP BENEFITS
+    ========================== -->
+        <section class="compare-section" id="compare">
+
+            <h2>COMPARE MEMBERSHIP BENEFITS</h2>
+
+            <div class="compare-table-wrap">
+
+                <table class="compare-table">
+
+                    <thead>
+                        <tr>
+                            <th>BENEFITS</th>
+                            <th class="yellow-col">SUPER KING</th>
+                            <th>SUPER KING PLUS</th>
+                            <th class="yellow-col">CHAMPION</th>
+                            <th>LEGEND</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <th><i class="fa-solid fa-ticket"></i> Priority Ticket Booking</th>
+                            <td><span class="compare-check gold"><i class="fa-solid fa-check"></i></span></td>
+                            <td><span class="compare-check blue"><i class="fa-solid fa-check"></i></span></td>
+                            <td><span class="compare-check gold"><i class="fa-solid fa-check"></i></span></td>
+                            <td><span class="compare-check blue"><i class="fa-solid fa-check"></i></span></td>
+                        </tr>
+
+                        <tr>
+                            <th><i class="fa-regular fa-clock"></i> Early Ticket Access</th>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-check blue"><i class="fa-solid fa-check"></i></span></td>
+                            <td><span class="compare-check gold"><i class="fa-solid fa-check"></i></span></td>
+                            <td><span class="compare-check blue"><i class="fa-solid fa-check"></i></span></td>
+                        </tr>
+
+                        <tr>
+                            <th><i class="fa-solid fa-tag"></i> Discount on CSK Shop</th>
+                            <td>10%</td>
+                            <td>15%</td>
+                            <td>20%</td>
+                            <td>25%</td>
+                        </tr>
+
+                        <tr>
+                            <th><i class="fa-solid fa-champagne-glasses"></i> Exclusive Events</th>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-check blue"><i class="fa-solid fa-check"></i></span></td>
+                            <td><span class="compare-check gold"><i class="fa-solid fa-check"></i></span></td>
+                            <td><span class="compare-check blue"><i class="fa-solid fa-check"></i></span></td>
+                        </tr>
+
+                        <tr>
+                            <th><i class="fa-solid fa-handshake"></i> Meet & Greet</th>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-check gold"><i class="fa-solid fa-check"></i></span></td>
+                            <td><span class="compare-check blue"><i class="fa-solid fa-check"></i></span></td>
+                        </tr>
+
+                        <tr>
+                            <th><i class="fa-solid fa-crown"></i> VIP Stadium Entry</th>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-check gold"><i class="fa-solid fa-check"></i></span></td>
+                            <td><span class="compare-check blue"><i class="fa-solid fa-check"></i></span></td>
+                        </tr>
+
+                        <tr>
+                            <th><i class="fa-solid fa-shirt"></i> Exclusive Kit</th>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-check gold"><i class="fa-solid fa-check"></i></span></td>
+                            <td><span class="compare-check blue"><i class="fa-solid fa-check"></i></span></td>
+                        </tr>
+
+                        <tr>
+                            <th><i class="fa-solid fa-video"></i> Behind-the-Scenes Access</th>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-check blue"><i class="fa-solid fa-check"></i></span></td>
+                        </tr>
+
+                        <tr>
+                            <th><i class="fa-solid fa-gift"></i> Personalized Membership Kit</th>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-dash">–</span></td>
+                            <td><span class="compare-check blue"><i class="fa-solid fa-check"></i></span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
+    <footer class="footer" id="more">
+
+        <div class="footer-grid">
+
+
+            <!-- Footer Brand -->
+            <div class="footer-brand">
+
+                <img src="./image/csk-logo.png" alt="CSK Logo">
+
+                <h3>
+                    CHENNAI<br>
+                    SUPER KINGS
+                </h3>
+
+                <p>
+                    © 2027 Chennai Super Kings.<br>
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div>
+
+                <h4>
+                    QUICK LINKS
+                </h4>
+
+                <a href="./index.html#home">
+                    Home
+                </a>
+
+                <a href="./index.html#matches">
+                    Matches
+                </a>
+
+                <a href="#">
+                    Tickets
+                </a>
+
+                <a href="#">
+                    Membership
+                </a>
+
+            </div>
+
+
+            <!-- Info -->
+            <div>
+
+                <h4>
+                    INFO
+                </h4>
+
+                <a href="#">
+                    About CSK
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+                <a href="#">
+                    FAQs
+                </a>
+
+            </div>
+
+
+            <!-- Help -->
+            <div>
+
+                <h4>
+                    HELP
+                </h4>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="#">
+                    My Account
+                </a>
+
+                <a href="#">
+                    Track Order
+                </a>
+
+                <a href="#">
+                    Cancellation Policy
+                </a>
+
+            </div>
+
+
+            <!-- App -->
+            <div>
+
+                <h4>
+                    DOWNLOAD APP
+                </h4>
+
+                <div href="#" class="store">
+                    <div class="store_para">
+                        <strong>
+                            <a href="">Google Play</a>
+                        </strong>
+                    </div>
+                    <div class="store_img">
+                        <img src="./image/playstore-logo.png" alt="" width="50px">
+                    </div>
+                </div>
+
+                <div href="#" class="store">
+                    <div class="store_para">
+                        <strong>
+                            <a href="">App Store</a>
+                        </strong>
+                    </div>
+                    <div class="store_img">
+                        <img src="./image/appstore-logo.png" alt="" width="50px">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+       TOAST MESSAGE
+  ========================== -->
+    <div class="toast" id="toast"></div>
+
+
+    <!-- JavaScript -->
+    <script src="./membership.js"></script>
+
+</body>
+
+</html>
