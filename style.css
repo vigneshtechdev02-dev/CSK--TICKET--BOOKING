@@ -1,0 +1,1329 @@
+/* =========================================================
+   CSK TICKET BOOKING WEBSITE
+   Complete Responsive CSS
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    color: #102b61;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================================================
+   COLORS
+========================================================= */
+
+:root {
+    --blue: #063b88;
+    --deep-blue: #062e70;
+    --yellow: #ffd400;
+    --light-yellow: #fff7d9;
+    --cream: #fffdf5;
+    --border: #e8e1cc;
+    --white: #ffffff;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    height: 90px;
+    background: var(--yellow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+
+}
+
+.nav-inner {
+    height: 100%;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    gap: 200px;
+}
+
+
+/* Logo */
+
+.brand {
+    width: 126px;
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+/* Desktop Menu */
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex: 1;
+}
+
+.desktop-nav a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #080808;
+    white-space: nowrap;
+}
+
+.desktop-nav a:hover {
+    color: #063b88;
+}
+
+.more-link span {
+    font-size: 18px;
+    margin-left: 4px;
+}
+
+
+/* Navbar Buttons */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.icon-btn {
+    background: transparent;
+    font-size: 24px;
+    color: #061c46;
+    position: relative;
+}
+
+.cart-btn {
+    font-size: 20px;
+}
+
+.cart-btn b {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    background: #0a3d87;
+    color: white;
+    border-radius: 50%;
+    font-size: 9px;
+    width: 17px;
+    height: 17px;
+    display: grid;
+    place-items: center;
+}
+
+.login-btn {
+    background: #073b82;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 11px 18px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.login-btn:hover {
+    background: #052d64;
+}
+
+
+/* Mobile Menu Button */
+
+.menu-btn {
+    display: none;
+    background: transparent;
+    font-size: 26px;
+}
+
+
+/* =========================================================
+   SIDE BAR
+========================================================= */
+.side_cancle_btn {
+    display: flex;
+    justify-content: end;
+    margin: 25px;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.side_navbar_brand img {
+    width: 120px;
+}
+
+.side_navbar_brand {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.side_navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 2000;
+    background-color: var(--yellow);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    left: -75%;
+    transition: all;
+    transition-duration: 1.5s;
+}
+
+.side_navbar_para {
+    text-align: center;
+}
+
+.side_navbar_para a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    color: black;
+}
+
+.side_btn_con{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.side_log {
+    background: #073b82;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 14px 22px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.side_log:hover {
+    background: #052d64;
+}
+
+
+
+/* =========================================================
+   SEARCH PANEL
+========================================================= */
+
+.search-panel {
+    display: none;
+    position: fixed;
+    top: 82px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: var(--deep-blue);
+    padding: 14px;
+}
+
+.search-panel.open {
+    display: block;
+}
+
+.search-box {
+    max-width: 760px;
+    margin: auto;
+    display: flex;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.search-box input {
+    flex: 1;
+    border: 0;
+    padding: 13px 16px;
+    outline: none;
+}
+
+.search-box button {
+    width: 48px;
+    background: #ffffff;
+    font-size: 24px;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    background: #082e6c;
+}
+
+.hero-reference {
+    position: absolute;
+    inset: 0;
+
+    background-image: url("./image/hero-img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    height: 100%;
+    max-width: 1030px;
+    margin: auto;
+    padding: 50px 30px;
+}
+
+.hero-copy {
+    width: 46%;
+    color: #ffffff;
+}
+
+.hero-copy p {
+    font-size: 18px;
+    line-height: 1.55;
+    margin: 18px 0;
+    position: relative;
+    top: 260px;
+    right: 200px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.primary-btn,
+.secondary-btn {
+    position: relative;
+    top: 300px;
+    right: 200px;
+    padding: 18px 26px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.primary-btn {
+    background: var(--yellow);
+    color: #081d4a;
+}
+
+.primary-btn:hover {
+    background: #ffdf32;
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================================
+   COMMON SECTION
+========================================================= */
+
+.section {
+    max-width: 90%;
+    margin: auto;
+    padding: 25px 0 20px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.section-heading h2,
+.how-section h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0a3677;
+}
+
+.small-yellow-btn {
+    background: var(--yellow);
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.small-yellow-btn:hover {
+    background: #ffdf32;
+}
+
+
+/* =========================================================
+   MATCH SLIDER
+========================================================= */
+
+.match-slider {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.match-track {
+    display: flex;
+    gap: 14px;
+    overflow: hidden;
+    padding: 0 2px;
+}
+
+.match-card {
+    min-width: calc((100% - 42px) / 4);
+    border: 1px solid #eee6d1;
+    border-radius: 9px;
+    background: #fffdf7;
+    padding: 16px 13px 14px;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.match-card:hover {
+    transform: translateY(-3px);
+    transition: 0.25s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Teams */
+
+.teams {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 7px;
+    color: #0a214e;
+}
+
+.teams>strong {
+    font-size: 11px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.team span {
+    font-size: 8px;
+    font-weight: 900;
+    margin-top: 3px;
+}
+
+
+/* Match Details */
+
+.match-date {
+    font-size: 11px;
+    font-weight: 700;
+    color: #142b57;
+    margin: 8px 0;
+}
+
+.match-card p {
+    font-size: 10px;
+    color: #454545;
+    min-height: 25px;
+}
+
+
+/* Book Button */
+
+.book-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 9px;
+    background: var(--yellow);
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.book-btn:hover {
+    background: #ffdf32;
+}
+
+
+/* Slider Arrows */
+
+.slider-arrow {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+    background: #ffffff;
+
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.15);
+
+    font-size: 30px;
+    color: #0b356e;
+}
+
+.slider-arrow:hover {
+    background: #f8f8f8;
+}
+
+.prev {
+    left: -18px;
+}
+
+.next {
+    right: -18px;
+}
+
+
+/* =========================================================
+   HOW IT WORKS
+========================================================= */
+
+.how-section {
+    max-width: 90%;
+    margin: 0 auto 40px;
+    background: var(--light-yellow);
+    border-radius: 8px;
+    padding: 12px 32px 18px;
+    text-align: center;
+}
+
+.how-section h2 {
+    font-size: 26px;
+}
+
+.how-section h2 {
+    margin-bottom: 12px;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step {
+    width: 21%;
+    text-align: center;
+    color: #142a55;
+}
+
+.step-icon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #e5dcbf;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+}
+
+.step b {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.step p {
+    font-size: 11px;
+    line-height: 1.35;
+    margin-top: 5px;
+    color: #1f2b3e;
+}
+
+.step-arrow {
+    color: #e0c226;
+    font-size: 35px;
+}
+
+
+/* =========================================================
+   OFFER SECTION
+========================================================= */
+
+.offer-section {
+    height: 270px;
+    max-width: 90%;
+    margin: 0 auto 20px;
+    border-radius: 9px;
+    overflow: hidden;
+    position: relative;
+}
+
+.offer-reference {
+    position: absolute;
+    height: 300px;
+    inset: 0;
+    background-image: url("./image/2nd\ -\ img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.offer-overlay {
+    position: relative;
+    margin-left: 30%;
+    padding-top: 40px;
+}
+
+.offer-overlay h2 {
+    font-size: 30px;
+    font-style: italic;
+    color: #0050a5;
+}
+
+.offer-overlay p {
+    color: #222;
+    margin: 8px 0 12px;
+    font-size: 20px;
+}
+
+.offer-overlay button {
+    background: #0a438c;
+    color: #ffffff;
+    padding: 10px 55px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.offer-overlay button:hover {
+    background: #052f67;
+}
+
+
+/* =========================================================
+   WHY BOOK WITH US
+========================================================= */
+
+.why-section {
+    max-width: 90%;
+    height: 200px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    background: #fffaf0;
+}
+
+.why-left {
+    width: 58%;
+    padding: 18px 27px;
+}
+
+.why-left h2 {
+    font-size: 28px;
+    margin-bottom: 22px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.benefits div {
+    text-align: center;
+    min-width: 75px;
+}
+
+.benefits span {
+    display: block;
+    font-size: 50px;
+    margin-bottom: 8px;
+}
+
+.benefits b,
+.benefits small {
+    display: block;
+    font-size: 14px;
+}
+
+.benefits small {
+    margin-top: 3px;
+}
+
+.why-image {
+    width: 42%;
+    background-image: url("./image/offer-image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+========================================================= */
+
+.newsletter {
+    background: #0750a0;
+
+    color: #ffffff;
+
+    min-height: 88px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 35px;
+
+    padding: 18px 25px;
+}
+
+.newsletter-copy h2 {
+    font-size: 20px;
+}
+
+.newsletter-copy p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 6px;
+}
+
+.newsletter form {
+    display: flex;
+    width: 395px;
+}
+
+.newsletter input {
+    flex: 1;
+
+    padding: 11px 14px;
+
+    border: 1px solid #6da0dc;
+
+    border-radius: 5px 0 0 5px;
+
+    background: #08468e;
+
+    color: #ffffff;
+
+    outline: none;
+}
+
+.newsletter input::placeholder {
+    color: #a9c4e6;
+}
+
+.newsletter button {
+    width: 100px;
+
+    background: var(--yellow);
+
+    font-weight: 800;
+
+    border-radius: 0 5px 5px 0;
+}
+
+.newsletter button:hover {
+    background: #ffdf32;
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.socials a {
+    width: 31px;
+    height: 31px;
+
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+
+    background: #1970ca;
+
+    color: #ffffff;
+
+    font-weight: 900;
+}
+
+.socials a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background: #06428d;
+
+    color: #ffffff;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
+
+    padding: 26px 0 30px;
+}
+
+.footer-grid {
+    max-width: 90%;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr 1fr 1.2fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* Footer Brand */
+
+.footer-brand {
+    position: relative;
+}
+
+.footer-brand img {
+    width: 140px;
+
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+.footer-brand h3 {
+    display: inline-block;
+
+    color: var(--yellow);
+
+    font-size: 20px;
+
+    line-height: 1.05;
+
+    vertical-align: middle;
+
+    margin-left: 5px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-top: 15px;
+}
+
+
+/* Footer Columns */
+
+.footer h4 {
+    font-size: 18px;
+    margin: 5px 0 12px;
+}
+
+.footer-grid>div:not(.footer-brand) a {
+    display: block;
+    font-size: 16px;
+    margin: 24px 0;
+    color: #ffffff;
+}
+
+.footer-grid>div:not(.footer-brand) a:hover {
+    color: var(--yellow);
+}
+
+
+
+/* App Buttons */
+
+.store {
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    border-radius: 5px;
+    padding: 4px 6px;
+    width: 170px;
+    margin-bottom: 7px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.store strong {
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   TOAST MESSAGE
+========================================================= */
+
+.toast {
+    position: fixed;
+
+    bottom: 20px;
+
+    left: 50%;
+
+    transform: translate(-50%, 20px);
+
+    background: #062e70;
+
+    color: #ffffff;
+
+    padding: 12px 18px;
+
+    border-radius: 6px;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: 0.25s;
+
+    z-index: 2000;
+
+    font-size: 13px;
+}
+
+.toast.show {
+    opacity: 1;
+
+    transform: translate(-50%, 0);
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE Big
+========================================================= */
+@media (max-width: 1100px) {
+    .hero {
+        height: 350px;
+
+    }
+
+    .nav-inner {
+        gap: 50px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        position: relative;
+        top: 120px;
+        right: 10px;
+        padding: 18px 26px;
+        border-radius: 7px;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .hero-copy p {
+        font-size: 18px;
+        line-height: 1.55;
+        margin: 18px 0;
+        position: relative;
+        top: 120px;
+        right: 10px;
+    }
+}
+
+/* =========================================================
+   TABLET RESPONSIVE Small
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .desktop-nav {
+        gap: 16px;
+    }
+
+    .nav-inner {
+        gap: 15px;
+    }
+
+
+    .hero-copy {
+        width: 52%;
+    }
+
+
+    .section,
+    .how-section,
+    .offer-section,
+    .why-section {
+        width: calc(100% - 30px);
+    }
+
+    .match-card {
+        min-width: calc((100% - 14px) / 2);
+    }
+
+    .footer-grid {
+        width: calc(100% - 30px);
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* Navbar */
+
+    .navbar {
+        height: 68px;
+        display: block;
+    }
+
+    .nav-inner {
+        padding: 0 15px;
+    }
+
+    .brand {
+        width: auto;
+        flex: 1;
+    }
+
+    .brand img {
+        width: 75px;
+        height: 50px;
+    }
+
+    .desktop-nav,
+    .login-btn {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-actions {
+        gap: 13px;
+    }
+
+
+    /* Mobile Menu */
+
+    .mobile-menu.open {
+        display: block;
+    }
+
+
+    /* Search */
+
+    .search-panel {
+        top: 68px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        height: 180px;
+    }
+
+    .hero-reference {
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 26px 20px;
+    }
+
+    .hero-copy {
+        width: 100%;
+        margin-top: 190px;
+    }
+
+    .hero-copy h1 {
+        font-size: 26px;
+    }
+
+    .hero-copy h1 strong {
+        font-size: 37px;
+    }
+
+    .hero-copy p {
+        font-size: 13px;
+        margin: 9px 0;
+    }
+
+    .hero-buttons button {
+        padding: 10px 13px;
+        font-size: 11px;
+    }
+
+
+    /* Sections */
+
+    .section {
+        padding-top: 20px;
+    }
+
+    .section-heading h2,
+    .how-section h2 {
+        font-size: 17px;
+    }
+
+
+    /* Matches */
+
+    .match-track {
+        overflow-x: auto;
+
+        scrollbar-width: none;
+
+        padding-bottom: 4px;
+    }
+
+    .match-track::-webkit-scrollbar {
+        display: none;
+    }
+
+    .match-card {
+        min-width: 78%;
+        padding: 12px;
+    }
+
+
+    /* How It Works */
+
+    .how-section {
+        padding: 10px 10px 15px;
+    }
+
+    .steps {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px 5px;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .step-arrow {
+        display: none;
+    }
+
+
+    /* Offers */
+
+    .offer-section {
+        height: 150px;
+    }
+
+    .offer-overlay {
+        margin-left: 39%;
+
+        padding: 27px 10px 0;
+    }
+
+    .offer-overlay h2 {
+        font-size: 18px;
+    }
+
+    .offer-overlay p {
+        font-size: 11px;
+    }
+
+    .offer-overlay button {
+        font-size: 9px;
+    }
+
+    .offer-reference {
+        height: 250px;
+
+    }
+
+
+    /* Why Section */
+
+    .why-section {
+        height: auto;
+
+        display: block;
+    }
+
+    .why-left {
+        width: 100%;
+
+        padding: 18px 16px;
+    }
+
+    .why-image {
+        width: 100%;
+        height: 160px;
+    }
+
+    .benefits {
+        gap: 4px;
+    }
+
+    .benefits div {
+        min-width: 0;
+
+        flex: 1;
+    }
+
+    .benefits b,
+    .benefits small {
+        font-size: 8px;
+    }
+
+
+    /* Newsletter */
+
+    .newsletter {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+    .newsletter form {
+        width: 100%;
+    }
+
+    .newsletter button {
+        width: 95px;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 390px) {
+
+    .icon-btn {
+        font-size: 20px;
+    }
+
+    .cart-btn {
+        font-size: 17px;
+    }
+
+    .hero {
+        height: 120px;
+    }
+
+    .hero-copy {
+        margin-top: 175px;
+    }
+
+    .hero-copy h1 {
+        font-size: 23px;
+    }
+
+    .hero-copy h1 strong {
+        font-size: 32px;
+    }
+
+    .hero-copy p {
+        font-size: 12px;
+    }
+
+    .offer-section {
+        height: 135px;
+    }
+
+    .offer-overlay {
+        padding-top: 21px;
+    }
+}
