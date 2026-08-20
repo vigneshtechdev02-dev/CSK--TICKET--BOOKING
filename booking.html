@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSK Tickets Booking</title>
+
+    <meta name="description" content="CSK match tickets, upcoming matches, offers and ticket booking.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./booking.css">
+
+    <!-- Logo Icorn -->
+    <link rel="shortcut icon" href="./images/csk-logo.png" type="image/x-icon">
+
+    <!-- Fontawsom Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- =========================
+       NAVBAR
+  ========================== -->
+    <header class="navbar">
+
+        <div class="nav-inner">
+
+            <a href="#home" class="brand">
+                <img src="./image/csk-logo.png" alt="Chennai Super Kings Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+
+                <a href="#home">Home</a>
+
+                <a href="#">Matches</a>
+
+                <a href="#">Tickets</a>
+
+                <a href="./membership.html">Membership</a>
+
+                <a href="./offer.html">Offers</a>
+
+                <a href="#">Contact</a>
+
+            </nav>
+
+            <!-- Navigation Actions -->
+            <div class="nav-actions">
+
+                <button class="icon-btn search-btn" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 0, 0);"></i>
+                </button>
+
+                <button class="icon-btn cart-btn" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-cart-shopping" style="color: rgb(0, 0, 0);"></i>
+                    <b id="cartCount">0</b>
+                </button>
+
+                <button class="login-btn" id="loginBtn">
+                    Login / Sign Up
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- =========================
+       SEARCH PANEL
+  ========================== -->
+    <div class="search-panel" id="searchPanel">
+
+        <div class="search-box">
+
+            <input id="searchInput" type="search" placeholder="Search matches, tickets, offers...">
+
+            <button id="searchClose" aria-label="Close Search">
+                ×
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Side Navbar -->
+    <div class="side_navbar">
+
+        <div class="side_cancle_btn" id="side_cancle">
+            <i class="fa-solid fa-x" style="color: rgb(0, 0, 0);"></i>
+        </div>
+
+        <a href="#home" class="side_navbar_brand">
+            <img src="./image/csk-logo.png" alt="Chennai Super Kings Logo">
+        </a>
+
+
+
+        <div class="side_navbar_para">
+            <a href="#home">Home</a>
+
+            <a href="#">Matches</a>
+
+            <a href="#">Tickets</a>
+
+            <a href="#">Membership</a>
+
+            <a href="#">Offers</a>
+
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="side_btn_con">
+            <button class="side_log" id="loginBtn">
+                Login / Sign Up
+            </button>
+        </div>
+
+    </div>
+
+<!-- Stadium Section -->
+
+
+    <div class="stadium-section">
+
+        <img src="./image/dhoni.png" class="dhoni" alt="CSK Player">
+
+        <img src="./image/players.png" class="right-players" alt="CSK Players">
+
+
+        <div class="match-card">
+
+            <div class="team-section">
+
+                <div class="team">
+                    <img src="./image/csk-logo.png" alt="CSK">
+                </div>
+
+                <div class="vs">
+                    <span>CSK</span>
+                    <b>VS</b>
+                    <span>MI</span>
+                </div>
+
+                <div class="team">
+                    <img src="./image/mum-logo.png" alt="MI">
+                </div>
+
+            </div>
+
+            <div class="match-date">
+                25 May 2024 | 7:30 PM
+            </div>
+
+            <div class="match-location">
+                MA Chidambaram Stadium, Chennai
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- =====================================
+         STEPS
+    ====================================== -->
+
+    <div class="booking-steps">
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <span>Match</span>
+        </div>
+
+        <div class="step-line"></div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <span>Select Seats</span>
+        </div>
+
+        <div class="step-line"></div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <span>Ticket Details</span>
+        </div>
+
+        <div class="step-line"></div>
+
+        <div class="step">
+            <div class="step-number">4</div>
+            <span>Payment</span>
+        </div>
+
+    </div>
+
+    <!-- =====================================================
+     MAIN BOOKING AREA
+===================================================== -->
+
+    <main class="booking-container">
+
+
+        <!-- =================================================
+         SEAT SECTION
+    ================================================== -->
+
+        <section class="seat-panel">
+
+            <div class="seat-heading">
+
+                <div>
+
+                    <h2>
+                        Select Your Seats
+                    </h2>
+
+                    <div class="seat-legend">
+
+                        <span>
+                            <i class="available-dot"></i>
+                            Available
+                        </span>
+
+                        <span>
+                            <i class="selected-dot"></i>
+                            Selected
+                        </span>
+
+                        <span>
+                            <i class="sold-dot"></i>
+                            Sold Out
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Stadium Zoom Controls -->
+
+            <div class="stadium-controls">
+
+                <button id="zoomIn">
+                    +
+                </button>
+
+                <button id="zoomOut">
+                    −
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+             STADIUM
+        ================================================== -->
+
+            <div class="stadium-wrapper" id="stadiumWrapper">
+
+                <div class="stadium" id="stadium">
+
+
+                    <!-- VIP RING -->
+
+                    <div class="vip-ring stadium-ring">
+
+                        <div class="ring-title">
+                            VIP LOUNGE
+                        </div>
+
+                        <div class="seat-row vip-row">
+
+                            <button class="seat" data-seat="V1" data-category="VIP Lounge" data-price="4999">
+                                V1
+                            </button>
+
+                            <button class="seat" data-seat="V2" data-category="VIP Lounge" data-price="4999">
+                                V2
+                            </button>
+
+                            <button class="seat" data-seat="V3" data-category="VIP Lounge" data-price="4999">
+                                V3
+                            </button>
+
+                            <button class="seat" data-seat="V4" data-category="VIP Lounge" data-price="4999">
+                                V4
+                            </button>
+
+                            <button class="seat" data-seat="V5" data-category="VIP Lounge" data-price="4999">
+                                V5
+                            </button>
+
+                            <button class="seat" data-seat="V6" data-category="VIP Lounge" data-price="4999">
+                                V6
+                            </button>
+
+                            <button class="seat" data-seat="V7" data-category="VIP Lounge" data-price="4999">
+                                V7
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PREMIUM RING -->
+
+                    <div class="premium-ring stadium-ring">
+
+                        <div class="ring-title">
+                            PREMIUM STAND
+                        </div>
+
+                        <div class="seat-row premium-row">
+
+                            <button class="seat" data-seat="P1" data-category="Premium Stand" data-price="3499">
+                                P1
+                            </button>
+
+                            <button class="seat" data-seat="P2" data-category="Premium Stand" data-price="3499">
+                                P2
+                            </button>
+
+                            <button class="seat" data-seat="P3" data-category="Premium Stand" data-price="3499">
+                                P3
+                            </button>
+
+                            <button class="seat sold" data-seat="P4" data-category="Premium Stand" data-price="3499">
+                                P4
+                            </button>
+
+                            <button class="seat" data-seat="P5" data-category="Premium Stand" data-price="3499">
+                                P5
+                            </button>
+
+                            <button class="seat" data-seat="P6" data-category="Premium Stand" data-price="3499">
+                                P6
+                            </button>
+
+                            <button class="seat" data-seat="P7" data-category="Premium Stand" data-price="3499">
+                                P7
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GRAND STAND -->
+
+                    <div class="grand-ring stadium-ring left-ring">
+
+                        <div class="ring-title">
+                            GRAND STAND
+                        </div>
+
+                        <div class="vertical-seats">
+
+                            <button class="seat" data-seat="G1" data-category="Grand Stand" data-price="2499">
+                                G1
+                            </button>
+
+                            <button class="seat" data-seat="G2" data-category="Grand Stand" data-price="2499">
+                                G2
+                            </button>
+
+                            <button class="seat" data-seat="G3" data-category="Grand Stand" data-price="2499">
+                                G3
+                            </button>
+
+                            <button class="seat" data-seat="G4" data-category="Grand Stand" data-price="2499">
+                                G4
+                            </button>
+
+                            <button class="seat" data-seat="G5" data-category="Grand Stand" data-price="2499">
+                                G5
+                            </button>
+
+                            <button class="seat sold" data-seat="G6" data-category="Grand Stand" data-price="2499">
+                                G6
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAMILY STAND -->
+
+                    <div class="family-ring stadium-ring right-ring">
+
+                        <div class="ring-title">
+                            FAMILY STAND
+                        </div>
+
+                        <div class="vertical-seats">
+
+                            <button class="seat" data-seat="F1" data-category="Family Stand" data-price="1699">
+                                F1
+                            </button>
+
+                            <button class="seat" data-seat="F2" data-category="Family Stand" data-price="1699">
+                                F2
+                            </button>
+
+                            <button class="seat" data-seat="F3" data-category="Family Stand" data-price="1699">
+                                F3
+                            </button>
+
+                            <button class="seat" data-seat="F4" data-category="Family Stand" data-price="1699">
+                                F4
+                            </button>
+
+                            <button class="seat" data-seat="F5" data-category="Family Stand" data-price="1699">
+                                F5
+                            </button>
+
+                            <button class="seat" data-seat="F6" data-category="Family Stand" data-price="1699">
+                                F6
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GENERAL STAND -->
+
+                    <div class="general-ring stadium-ring bottom-ring">
+
+                        <div class="ring-title">
+                            GENERAL STAND
+                        </div>
+
+                        <div class="general-seats">
+
+                            <button class="seat" data-seat="E1" data-category="General Stand" data-price="999">
+                                E1
+                            </button>
+
+                            <button class="seat" data-seat="E2" data-category="General Stand" data-price="999">
+                                E2
+                            </button>
+
+                            <button class="seat" data-seat="E3" data-category="General Stand" data-price="999">
+                                E3
+                            </button>
+
+                            <button class="seat" data-seat="E4" data-category="General Stand" data-price="999">
+                                E4
+                            </button>
+
+                            <button class="seat" data-seat="E5" data-category="General Stand" data-price="999">
+                                E5
+                            </button>
+
+                            <button class="seat" data-seat="E6" data-category="General Stand" data-price="999">
+                                E6
+                            </button>
+
+                            <button class="seat" data-seat="E7" data-category="General Stand" data-price="999">
+                                E7
+                            </button>
+
+                            <button class="seat" data-seat="E8" data-category="General Stand" data-price="999">
+                                E8
+                            </button>
+
+                            <button class="seat" data-seat="E9" data-category="General Stand" data-price="999">
+                                E9
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CRICKET GROUND -->
+
+                    <div class="cricket-ground">
+
+                        <div class="ground-lines"></div>
+
+                        <div class="pitch">
+
+                            <div class="pitch-line"></div>
+
+                        </div>
+
+                        <div class="center-circle"></div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+         SELECTION SUMMARY
+    ================================================== -->
+
+        <aside class="selection-panel">
+
+            <div class="selection-title">
+
+                <h2>
+                    Your Selection
+                </h2>
+
+                <span id="selectedBadge">
+                    0 Seats Selected
+                    ✓
+                </span>
+
+            </div>
+
+
+            <div class="summary-content">
+
+
+                <!-- Seat Numbers -->
+
+                <div class="summary-row">
+
+                    <span>
+                        Seat Numbers
+                    </span>
+
+                    <strong id="selectedSeats">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <!-- Category -->
+
+                <div class="summary-row">
+
+                    <span>
+                        Category
+                    </span>
+
+                    <strong id="selectedCategory">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <!-- Price -->
+
+                <div class="summary-row">
+
+                    <span>
+                        Price Per Ticket
+                    </span>
+
+                    <strong id="pricePerTicket">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <!-- Quantity -->
+
+                <div class="summary-row quantity-row">
+
+                    <span>
+                        Number of Tickets
+                    </span>
+
+                    <div class="quantity-control">
+
+                        <button id="minusBtn">
+                            −
+                        </button>
+
+                        <strong id="ticketQuantity">
+                            0
+                        </strong>
+
+                        <button id="plusBtn">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Convenience -->
+
+                <div class="summary-row">
+
+                    <span>
+                        Convenience Fee
+                    </span>
+
+                    <strong id="convenienceFee">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <!-- Total -->
+
+                <div class="summary-total">
+
+                    <span>
+                        Total Amount
+                    </span>
+
+                    <strong id="totalAmount">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <!-- Continue -->
+
+                <button class="continue-btn" id="continueBtn">
+
+                    <span>
+                        Continue to Ticket Details
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
+    <footer class="footer" id="more">
+
+        <div class="footer-grid">
+
+
+            <!-- Footer Brand -->
+            <div class="footer-brand">
+
+                <img src="./image/csk-logo.png" alt="CSK Logo">
+
+                <h3>
+                    CHENNAI<br>
+                    SUPER KINGS
+                </h3>
+
+                <p>
+                    © 2027 Chennai Super Kings.<br>
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div>
+
+                <h4>
+                    QUICK LINKS
+                </h4>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#matches">
+                    Matches
+                </a>
+
+                <a href="#tickets">
+                    Tickets
+                </a>
+
+                <a href="#membership">
+                    Membership
+                </a>
+
+            </div>
+
+
+            <!-- Info -->
+            <div>
+
+                <h4>
+                    INFO
+                </h4>
+
+                <a href="#">
+                    About CSK
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+                <a href="#">
+                    FAQs
+                </a>
+
+            </div>
+
+
+            <!-- Help -->
+            <div>
+
+                <h4>
+                    HELP
+                </h4>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="#">
+                    My Account
+                </a>
+
+                <a href="#">
+                    Track Order
+                </a>
+
+                <a href="#">
+                    Cancellation Policy
+                </a>
+
+            </div>
+
+
+            <!-- App -->
+            <div>
+
+                <h4>
+                    DOWNLOAD APP
+                </h4>
+
+                <div href="#" class="store">
+                    <div class="store_para">
+                        <strong>
+                            <a href="">Google Play</a>
+                        </strong>
+                    </div>
+                    <div class="store_img">
+                        <img src="./image/playstore-logo.png" alt="" width="50px">
+                    </div>
+                </div>
+
+                <div href="#" class="store">
+                    <div class="store_para">
+                        <strong>
+                            <a href="">App Store</a>
+                        </strong>
+                    </div>
+                    <div class="store_img">
+                        <img src="./image/appstore-logo.png" alt="" width="50px">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+       TOAST MESSAGE
+  ========================== -->
+    <div class="toast" id="toast"></div>
+
+
+    <!-- JavaScript -->
+    <script src="booking.js"></script>
+
+</body>
