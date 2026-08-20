@@ -98,7 +98,7 @@ a {
 }
 
 .desktop-nav a {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     color: #080808;
     white-space: nowrap;
@@ -278,7 +278,6 @@ a {
     background: #ffffff;
     font-size: 24px;
 }
-
 
 /* =========================================
    HERO
@@ -905,12 +904,55 @@ a {
     font-size: 8px;
 }
 
+/* =========================================================
+   TABLET RESPONSIVE Big
+========================================================= */
+@media (max-width: 1100px) {
+    .hero {
+        height: 350px;
+
+    }
+
+    .nav-inner {
+        gap: 50px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        position: relative;
+        top: 120px;
+        right: 10px;
+        padding: 18px 26px;
+        border-radius: 7px;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .hero-copy p {
+        font-size: 18px;
+        line-height: 1.55;
+        margin: 18px 0;
+        position: relative;
+        top: 120px;
+        right: 10px;
+    }
+}
+
 
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 1100px) {
+
+    .desktop-nav {
+        gap: 16px;
+    }
+
+    .nav-inner {
+        gap: 20px;
+    }
+
 
     .nav-menu {
         gap: 20px;
@@ -1015,6 +1057,17 @@ a {
     .nav-right {
         display: none;
     }
+
+    /* Hero */
+
+    .hero {
+        height: 180px;
+    }
+
+    .hero-reference {
+        background-position: center;
+    }
+
 
     .hamburger {
         display: block;
@@ -1160,12 +1213,54 @@ a {
 
 }
 
+@media (max-width: 700px) {
+
+    /* Navbar */
+
+    .navbar {
+        height: 68px;
+        display: block;
+    }
+
+    .nav-inner {
+        padding: 0 15px;
+    }
+
+    .brand {
+        width: auto;
+        flex: 1;
+    }
+
+    .brand img {
+        width: 75px;
+        height: 50px;
+    }
+
+    .desktop-nav,
+    .login-btn {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-actions {
+        gap: 13px;
+    }
+}
+
+
 
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 550px) {
+
+    .hero {
+        display: none;
+    }
 
     .offers-wrapper {
         padding: 15px 12px 0;
@@ -1266,6 +1361,31 @@ a {
         padding: 15px 10px;
 
         font-size: 11px;
+    }
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 390px) {
+
+    .hero {
+        display: none;
     }
 
 }

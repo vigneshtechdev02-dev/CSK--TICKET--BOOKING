@@ -101,7 +101,7 @@ a {
 }
 
 .desktop-nav a {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     color: #080808;
     white-space: nowrap;
@@ -967,7 +967,7 @@ a {
     }
 
     .nav-inner {
-        gap: 50px;
+        gap: 20px;
     }
 
     .primary-btn,
