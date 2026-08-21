@@ -21,6 +21,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+    /* =========================================================
+  SIDE NAVBAR 
+========================================================= */
+    const menu = document.getElementById("menuBtn")
+    const canclebtn = document.getElementById("side_cancle")
+
+    menu.addEventListener("click", function () {
+        var sidebar = document.querySelector(".side_navbar")
+        sidebar.style.left = "0px"
+    })
+
+    canclebtn.addEventListener("click", function () {
+        var sidebar = document.querySelector(".side_navbar")
+        sidebar.style.left = "-75%"
+    })
+
 
     /* ==========================================
        NAVIGATION LINKS
