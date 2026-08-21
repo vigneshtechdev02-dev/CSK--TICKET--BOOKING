@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSK - Upcoming Matches</title>
+
+    <link rel="stylesheet" href="./match.css">
+
+    <!-- Fontawsom Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- =========================
+       NAVBAR
+  ========================== -->
+    <header class="navbar">
+
+        <div class="nav-inner">
+
+            <a href="#home" class="brand">
+                <img src="./image/csk-logo.png" alt="Chennai Super Kings Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+
+                <a href="./index.html">Home</a>
+
+                <a href="#">Matches</a>
+
+                <a href="./booking.html">Tickets</a>
+
+                <a href="./membership.html">Membership</a>
+
+                <a href="./offer.html">Offers</a>
+
+                <a href="#">Contact</a>
+
+            </nav>
+
+            <!-- Navigation Actions -->
+            <div class="nav-actions">
+
+                <button class="icon-btn search-btn" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 0, 0);"></i>
+                </button>
+
+                <button class="icon-btn cart-btn" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-cart-shopping" style="color: rgb(0, 0, 0);"></i>
+                    <b id="cartCount">0</b>
+                </button>
+
+                <button class="login-btn" id="loginBtn">
+                    <a href="./login.html">Login / Sign Up</a>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- =========================
+       SEARCH PANEL
+  ========================== -->
+    <div class="search-panel" id="searchPanel">
+
+        <div class="search-box">
+
+            <input id="searchInput" type="search" placeholder="Search matches, tickets, offers...">
+
+            <button id="searchClose" aria-label="Close Search">
+                ×
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Side Navbar -->
+    <div class="side_navbar">
+
+        <div class="side_cancle_btn" id="side_cancle">
+            <i class="fa-solid fa-x" style="color: rgb(0, 0, 0);"></i>
+        </div>
+
+        <a href="#home" class="side_navbar_brand">
+            <img src="./image/csk-logo.png" alt="Chennai Super Kings Logo">
+        </a>
+
+
+
+        <div class="side_navbar_para">
+            <a href="./index.html">Home</a>
+
+            <a href="#">Matches</a>
+
+            <a href="./booking.html">Tickets</a>
+
+            <a href="./membership.html">Membership</a>
+
+            <a href="./offer.html">Offers</a>
+
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="side_btn_con">
+            <button class="side_log" id="loginBtn">
+                <a href="./login.html">Login / Sign Up</a>
+            </button>
+        </div>
+
+    </div>
+
+    <main class="page">
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <!-- CSK LOGO -->
+
+                <div class="hero-brand">
+
+                    <img src="./image/csk-logo.png" alt="Chennai Super Kings">
+
+                </div>
+
+                <!-- TITLE -->
+
+                <div class="hero-title">
+
+                    <h1>
+
+                        UPCOMING<br>
+
+                        MATCHES
+
+                    </h1>
+
+                    <p>
+
+                        Cheer for CSK. Roar in Yellow!
+
+                    </p>
+
+                </div>
+
+                <!-- PLAYER IMAGE -->
+
+                <div class="hero-players" aria-hidden="true">
+
+                </div>
+
+                <!-- WHISTLE PODU -->
+
+                <div class="hero-slogan">
+
+                    <span>WHISTLE</span>
+
+                    <strong>PODU!!</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= MATCHES ================= -->
+
+        <section class="matches-section">
+
+
+
+            <!-- ================= MATCH 1 ================= -->
+
+            <div class="match-card">
+
+                <!-- DATE -->
+
+                <div class="date">
+
+                    <span>FRI</span>
+
+                    <strong>24</strong>
+
+                    <small>
+
+                        MAY 2027
+
+                    </small>
+
+                </div>
+
+
+
+                <!-- VENUE -->
+
+                <div class="venue">
+
+                    <div class="time">
+
+                        ◷ <b>7:30 PM IST</b>
+
+                    </div>
+
+                    <div class="location">
+
+                        ⌖ MA Chidambaram<br>
+
+                        Stadium, Chennai
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TEAMS -->
+
+                <div class="teams">
+
+                    <!-- CSK -->
+
+                    <div class="team">
+
+                        <img class="team-logo" src="./image/csk-logo.png" alt="CSK">
+                        <b>CSK</b>
+                    </div>
+
+
+
+                    <!-- VS -->
+
+                    <div class="vs">
+
+                        VS
+
+                    </div>
+
+
+
+                    <!-- KKR -->
+
+                    <div class="team">
+
+                        <img class="team-logo" src="./image/kol-logo.png" alt="KKR">
+                        <b>KKR</b>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BOOK -->
+
+                <button class="ticket-btn">
+
+                    <span>🎟</span>
+
+                    <span>
+
+                        Book Tickets
+
+                    </span>
+
+                    <b>→</b>
+
+                </button>
+
+            </div>
+
+
+
+
+
+            <!-- ================= MATCH 2 ================= -->
+
+            <div class="match-card">
+
+                <div class="date">
+
+                    <span>SUN</span>
+
+                    <strong>26</strong>
+
+                    <small>
+
+                        MAY 2027
+
+                    </small>
+
+                </div>
+
+
+
+                <div class="venue">
+
+                    <div class="time">
+
+                        ◷ <b>3:30 PM IST</b>
+
+                    </div>
+
+                    <div class="location">
+
+                        ⌖ MA Chidambaram<br>
+
+                        Stadium, Chennai
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="teams">
+
+                    <!-- CSK -->
+
+                    <div class="team">
+
+                        <img class="team-logo" src="image/csk-logo.png" alt="CSK">
+                        <b>CSK</b>
+                    </div>
+
+
+
+                    <div class="vs">
+
+                        VS
+
+                    </div>
+
+
+
+                    <!-- MI -->
+
+                    <div class="team">
+
+                        <img class="team-logo" src="image/mum-logo.png" alt="Mumbai Indians">
+                        <b>MI</b>
+                    </div>
+
+                </div>
+
+
+
+                <button class="ticket-btn">
+
+                    <span>🎟</span>
+
+                    <span>
+
+                        Book Tickets
+
+                    </span>
+
+                    <b>→</b>
+
+                </button>
+
+            </div>
+
+
+
+
+
+            <!-- ================= MATCH 3 ================= -->
+
+            <div class="match-card">
+
+                <div class="date">
+
+                    <span>WED</span>
+
+                    <strong>29</strong>
+
+                    <small>
+
+                        MAY 2027
+
+                    </small>
+
+                </div>
+
+
+
+                <div class="venue">
+
+                    <div class="time">
+
+                        ◷ <b>7:30 PM IST</b>
+
+                    </div>
+
+                    <div class="location">
+
+                        ⌖ MA Chidambaram<br>
+
+                        Stadium, Chennai
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="teams">
+
+                    <!-- CSK -->
+
+                    <div class="team">
+
+                        <img class="team-logo" src="./image/csk-logo.png" alt="CSK">
+                        <b>CSK</b>
+                    </div>
+
+
+
+                    <div class="vs">
+
+                        VS
+
+                    </div>
+
+
+
+                    <!-- RCB -->
+
+                    <div class="team">
+
+                        <img class="team-logo" src="image/rcb-logo.png" alt="Royal Challengers Bengaluru">
+                        <b>RCB</b>
+
+                    </div>
+
+                </div>
+
+
+
+                <button class="ticket-btn">
+
+                    <span>🎟</span>
+
+                    <span>
+
+                        Book Tickets
+
+                    </span>
+
+                    <b>→</b>
+
+                </button>
+
+            </div>
+
+
+
+
+
+            <!-- ================= MATCH 4 ================= -->
+
+            <div class="match-card">
+
+                <div class="date">
+
+                    <span>SAT</span>
+
+                    <strong>01</strong>
+
+                    <small>
+
+                        JUN 2027
+
+                    </small>
+
+                </div>
+
+
+
+                <div class="venue">
+
+                    <div class="time">
+
+                        ◷ <b>7:30 PM IST</b>
+
+                    </div>
+
+                    <div class="location">
+
+                        ⌖ MA Chidambaram<br>
+
+                        Stadium, Chennai
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="teams">
+
+                    <!-- CSK -->
+
+                    <div class="team">
+
+                        <img class="team-logo" src="./image/csk-logo.png" alt="CSK">
+                        <b>CSK</b>
+                    </div>
+
+
+
+                    <div class="vs">
+
+                        VS
+
+                    </div>
+
+
+
+                    <!-- RR -->
+
+                    <div class="team">
+
+                        <img class="team-logo" src="image/raj-logo.png" alt="Rajasthan Royals">
+                        <b>RR</b>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <button class="ticket-btn">
+
+                    <span>🎟</span>
+
+                    <span>
+
+                        Book Tickets
+
+                    </span>
+
+                    <b>→</b>
+
+                </button>
+
+            </div>
+
+
+
+
+
+            <!-- ================= MATCH 5 ================= -->
+
+            <div class="match-card">
+
+                <div class="date">
+
+                    <span>MON</span>
+
+                    <strong>03</strong>
+
+                    <small>
+
+                        JUN 2027
+
+                    </small>
+
+                </div>
+
+
+
+                <div class="venue">
+
+                    <div class="time">
+
+                        ◷ <b>7:30 PM IST</b>
+
+                    </div>
+
+                    <div class="location">
+
+                        ⌖ MA Chidambaram<br>
+
+                        Stadium, Chennai
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="teams">
+
+                    <!-- CSK -->
+
+                    <div class="team">
+
+                        <img class="team-logo" src="./image/csk-logo.png" alt="CSK">
+                        <b>CSK</b>
+                    </div>
+
+
+
+                    <div class="vs">
+
+                        VS
+
+                    </div>
+
+
+
+                    <!-- SRH -->
+
+                    <div class="team">
+
+                        <img class="team-logo" src="./image/del-logo.png" alt="SRH">
+                        <b>DC</b>
+
+                    </div>
+
+                </div>
+
+
+
+                <button class="ticket-btn">
+
+                    <span>🎟</span>
+
+                    <span>
+
+                        Book Tickets
+
+                    </span>
+
+                    <b>→</b>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
+    <footer class="footer" id="more">
+
+        <div class="footer-grid">
+
+
+            <!-- Footer Brand -->
+            <div class="footer-brand">
+
+                <img src="./image/csk-logo.png" alt="CSK Logo">
+
+                <h3>
+                    CHENNAI<br>
+                    SUPER KINGS
+                </h3>
+
+                <p>
+                    © 2027 Chennai Super Kings.<br>
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div>
+
+                <h4>
+                    QUICK LINKS
+                </h4>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#matches">
+                    Matches
+                </a>
+
+                <a href="#tickets">
+                    Tickets
+                </a>
+
+                <a href="#membership">
+                    Membership
+                </a>
+
+            </div>
+
+
+            <!-- Info -->
+            <div>
+
+                <h4>
+                    INFO
+                </h4>
+
+                <a href="#">
+                    About CSK
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+                <a href="#">
+                    FAQs
+                </a>
+
+            </div>
+
+
+            <!-- Help -->
+            <div>
+
+                <h4>
+                    HELP
+                </h4>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="#">
+                    My Account
+                </a>
+
+                <a href="#">
+                    Track Order
+                </a>
+
+                <a href="#">
+                    Cancellation Policy
+                </a>
+
+            </div>
+
+
+            <!-- App -->
+            <div>
+
+                <h4>
+                    DOWNLOAD APP
+                </h4>
+
+                <div href="#" class="store">
+                    <div class="store_para">
+                        <strong>
+                            <a href="">Google Play</a>
+                        </strong>
+                    </div>
+                    <div class="store_img">
+                        <img src="./image/playstore-logo.png" alt="" width="50px">
+                    </div>
+                </div>
+
+                <div href="#" class="store">
+                    <div class="store_para">
+                        <strong>
+                            <a href="">App Store</a>
+                        </strong>
+                    </div>
+                    <div class="store_img">
+                        <img src="./image/appstore-logo.png" alt="" width="50px">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        /* =========================================================
+  SIDE NAVBAR 
+========================================================= */
+        const menu = document.getElementById("menuBtn")
+        const canclebtn = document.getElementById("side_cancle")
+
+        menu.addEventListener("click", function () {
+            var sidebar = document.querySelector(".side_navbar")
+            sidebar.style.left = "0px"
+        })
+
+        canclebtn.addEventListener("click", function () {
+            var sidebar = document.querySelector(".side_navbar")
+            sidebar.style.left = "-75%"
+        })
+
+        document
+
+            .querySelectorAll(".ticket-btn")
+
+            .forEach(button => {
+
+                button.addEventListener("click", () => {
+
+                    alert("Ticket booking clicked!");
+
+                });
+
+            });
+
+    </script>
+
+</body>
+
+</html>
