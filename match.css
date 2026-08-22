@@ -813,155 +813,13 @@ a {
     }
 }
 
-/* ================= TABLET / MOBILE ================= */
-
-@media (max-width: 760px) {
-
-
-    /* Navbar */
-
-    .navbar {
-        height: 68px;
-        display: block;
-    }
-
-    .nav-inner {
-        padding: 0 15px;
-    }
-
-    .brand {
-        width: auto;
-        flex: 1;
-    }
-
-    .brand img {
-        width: 75px;
-        height: 50px;
-    }
-
-    .desktop-nav,
-    .login-btn {
-        display: none;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .nav-actions {
-        gap: 13px;
-    }
-
-
-    /* Mobile Menu */
-
-    .mobile-menu.open {
-        display: block;
-    }
-
-
-    /* Search */
-
-    .search-panel {
-        top: 68px;
-    }
-
-    .page {
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-    }
-
-    .hero {
-        min-height: 220px;
-        background-position: center;
-    }
-
-    .hero-content {
-        min-height: 220px;
-        padding: 20px;
-    }
-
-    .hero-brand {
-        width: 75px;
-    }
-
-    .hero-brand img {
-        width: 65px;
-        height: 65px;
-    }
-
-    .hero-title {
-        margin-left: 4px;
-    }
-
-    .hero-title h1 {
-        font-size: 43px;
-    }
-
-    .hero-title p {
-        font-size: 12px;
-        max-width: 210px;
-    }
-
-    .hero-players {
-        left: 45%;
-        opacity: 0.75;
-        background-size: auto 100%;
-    }
-
-    .matches-section {
-        padding: 14px;
-    }
-
-    .match-card {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 16px;
-        text-align: center;
-    }
-
-    .date {
-        height: auto;
-        border-right: 0;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 10px;
-    }
-
-    .venue {
-        border-right: 0;
-        padding: 0;
-    }
-
-    .teams {
-        padding: 8px 0;
-        gap: 12px;
-    }
-
-    .team {
-        min-width: 100px;
-    }
-
-    .team img.team-logo,
-    .team-logo-placeholder {
-        width: 55px;
-        height: 55px;
-    }
-
-    .team b {
-        font-size: 18px;
-    }
-
-    .ticket-btn {
-        width: 100%;
-    }
-
-    /* Footer */
+@media (max-width: 900px) {
 
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
+        width: calc(100% - 30px);
 
-        gap: 20px;
+        grid-template-columns:
+            repeat(3, 1fr);
     }
 
     .footer-brand {
@@ -969,61 +827,217 @@ a {
     }
 }
 
+    /* ================= TABLET / MOBILE ================= */
 
-/* ================= SMALL MOBILE ================= */
+    @media (max-width: 760px) {
 
-@media (max-width: 430px) {
 
-    .hero-title h1 {
-        font-size: 35px;
+        /* Navbar */
+
+        .navbar {
+            height: 68px;
+            display: block;
+        }
+
+        .nav-inner {
+            padding: 0 15px;
+        }
+
+        .brand {
+            width: auto;
+            flex: 1;
+        }
+
+        .brand img {
+            width: 75px;
+            height: 50px;
+        }
+
+        .desktop-nav,
+        .login-btn {
+            display: none;
+        }
+
+        .menu-btn {
+            display: block;
+        }
+
+        .nav-actions {
+            gap: 13px;
+        }
+
+
+        /* Mobile Menu */
+
+        .mobile-menu.open {
+            display: block;
+        }
+
+
+        /* Search */
+
+        .search-panel {
+            top: 68px;
+        }
+
+        .page {
+            width: 100%;
+            margin: 0;
+            border-radius: 0;
+        }
+
+        .hero {
+            min-height: 220px;
+            background-position: center;
+        }
+
+        .hero-content {
+            min-height: 220px;
+            padding: 20px;
+        }
+
+        .hero-brand {
+            width: 75px;
+        }
+
+        .hero-brand img {
+            width: 65px;
+            height: 65px;
+        }
+
+        .hero-title {
+            margin-left: 4px;
+        }
+
+        .hero-title h1 {
+            font-size: 43px;
+        }
+
+        .hero-title p {
+            font-size: 12px;
+            max-width: 210px;
+        }
+
+        .hero-players {
+            left: 45%;
+            opacity: 0.75;
+            background-size: auto 100%;
+        }
+
+        .matches-section {
+            padding: 14px;
+        }
+
+        .match-card {
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .date {
+            height: auto;
+            border-right: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .venue {
+            border-right: 0;
+            padding: 0;
+        }
+
+        .teams {
+            padding: 8px 0;
+            gap: 12px;
+        }
+
+        .team {
+            min-width: 100px;
+        }
+
+        .team img.team-logo,
+        .team-logo-placeholder {
+            width: 55px;
+            height: 55px;
+        }
+
+        .team b {
+            font-size: 18px;
+        }
+
+        .ticket-btn {
+            width: 100%;
+        }
+
+        /* Footer */
+
+        .footer-grid {
+            grid-template-columns: 1fr 1fr;
+
+            gap: 20px;
+        }
+
+        .footer-brand {
+            grid-column: 1 / -1;
+        }
     }
 
-    .hero-players {
-        left: 50%;
-        opacity: 0.45;
+
+    /* ================= SMALL MOBILE ================= */
+
+    @media (max-width: 430px) {
+
+        .hero-title h1 {
+            font-size: 35px;
+        }
+
+        .hero-players {
+            left: 50%;
+            opacity: 0.45;
+        }
+
+        .hero-title p {
+            max-width: 160px;
+        }
+
+        .teams {
+            gap: 5px;
+        }
+
+        .team {
+            min-width: 85px;
+            gap: 5px;
+        }
+
+        .team img.team-logo,
+        .team-logo-placeholder {
+            width: 48px;
+            height: 48px;
+        }
+
+        .team b {
+            font-size: 16px;
+        }
+
+        .vs {
+            width: 32px;
+            height: 32px;
+            font-size: 10px;
+        }
     }
 
-    .hero-title p {
-        max-width: 160px;
-    }
-
-    .teams {
-        gap: 5px;
-    }
-
-    .team {
-        min-width: 85px;
-        gap: 5px;
-    }
-
-    .team img.team-logo,
-    .team-logo-placeholder {
-        width: 48px;
-        height: 48px;
-    }
-
-    .team b {
-        font-size: 16px;
-    }
-
-    .vs {
-        width: 32px;
-        height: 32px;
-        font-size: 10px;
-    }
-}
-
-/* =========================================================
+    /* =========================================================
    SMALL MOBILE
 ========================================================= */
 
-@media (max-width: 390px) {
+    @media (max-width: 390px) {
 
-    .icon-btn {
-        font-size: 20px;
-    }
+        .icon-btn {
+            font-size: 20px;
+        }
 
-    .cart-btn {
-        font-size: 17px;
+        .cart-btn {
+            font-size: 17px;
+        }
     }
-}
